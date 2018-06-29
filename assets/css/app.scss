@@ -1,0 +1,89 @@
+/* This file is for your main application css. */
+
+@import "bootstrap";
+
+.logo-name{
+  font-family:fantasy;
+  font-stretch: ultra-condensed;
+}
+.tab{
+  background-color: white;
+  border-bottom: solid 3px blue;
+  border-radius: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.login-card{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 100px;
+}
+@media screen and (max-width: 992px) {
+  .login-card{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 10px;
+  }
+}
+.chat-container{
+  background-color: hsl(60, 100%, 95%);
+  height: 37em;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+.chat-bubble-receive{
+  overflow-x: hidden;
+  max-width: 70%;
+  border-radius: 0px 15px 15px 15px !important;
+}
+.chat-bubble-send{
+
+  border-radius: 15px 0px 15px 15px !important;
+  overflow-x: hidden;
+  max-width: 70%;
+}
+.chat-bubble-container-send{
+  display: flex;
+  justify-content: flex-end;
+}
+.chat-bubble-container-receive{
+  display: flex;
+  justify-content:flex-start;
+}
+body{
+  font-size: 16px;
+  background-color: hsl(240, 100%, 15%);
+}
+
+
+.chat-people{
+  height: 37em;
+  overflow-y: auto;
+}
+
+.profileDp{
+  height: 2em;
+  padding-right: 3px;
+}
+
+.box-heading{
+
+}
+.triangle-receive {
+  margin-left:5px;
+  height: 20px;
+  width: 20px;
+  background-color: #ffc107;
+  -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.triangle-send {
+  margin-right:5px;
+  height: 20px;
+  width: 20px;
+  background-color: #ffc107;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 0 100%, 0 0);
+}
